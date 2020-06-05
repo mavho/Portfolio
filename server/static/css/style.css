@@ -33,7 +33,7 @@ a :hover{
     background-color:#5e2a2a;
 }
 .has-background-yellow{
-    background-color: #f4d59ebf;
+    background-color: #f4d59ebf !important;
 }
 .docScroller{
     overflow-x: hidden;
