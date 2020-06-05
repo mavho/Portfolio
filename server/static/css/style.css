@@ -84,6 +84,7 @@ a :hover{
 }
 .main-section{
     background: url("../images/different-hues-of-color-of-the-sky-2847648-min.jpg") fixed;
+    /*background:linear-gradient(yellow,green);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
