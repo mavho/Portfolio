@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Maverick's Porfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Bulma Version 0.8.2-->
+    <link rel="stylesheet" type="text/css" href="static/css/bulma082.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <section class="main-section">
+
+      <section class="hero is-fullheight main-section">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column  on-top is-4 is-offset-1-touch is-offset-1-desktop-only brand-column">
+                <h1 class="title has-text-brown is-size-1">
+                  Maverick Ho
+                </h1>
+                <h2 class="subtitle has-text-brown is-3">
+                  Full Stack Software Developer
+                </h2>
+                <h2 class="subtitle is-size-3">
+                </h2>
+                <div class="navbar is-transparent">
+                  <div class="navbar-menu ">
+                    <div class="navbar-start">
+                      <a class="navbar-item " href="#about">
+                        <div class="has-text-brown">
+                          <span class="icon">
+                            <i class="fas fa-info"></i>
+                          </span>
+                          <span>About</span>
+                        </div>
+                      </a>
+                      <a class="navbar-item" href="#resume">
+                        <div class="has-text-brown">
+                          <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                          </span>
+                          <span>Resume</span>
+                        </div>
+                      </a>
+                      <a class="navbar-item" href="#portfolio">
+                        <div class="has-text-brown">
+                          <span class="icon">
+                            <i class="fas fa-th-list"></i>
+                          </span>
+                          <span>Portfolio</span>
+                        </div>
+                      </a>
+                      <a class="navbar-item" href="#contact">
+                        <div class="has-text-brown">
+                          <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <span>Contact</span>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section class="section" >
+        <div class="container">
+          <div class="columns">
+            <div class="column is-offset-4-desktop">
+              <div class="tile is-ancestor">
+                <div class="tile is-parent is-vertical">
+                  <div class="tile is-parent">
+                    <div class="tile is-child">
+                      <div class="hero is-large">
+                        <div class="hero-body" id="about">
+                          {% include "_includes/about.html" %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child">
+                      <div class="hero is-large">
+                        <div class="hero-body" id="resume">
+                          {% include "_includes/resume.html" %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile is-parent" id="portfolio">
+                    <div class="tile is-child">
+                      <div class="section-heading ">
+                        <h3 class="title is-2 has-text-brown">Portfolio</h3>
+                        <h4 class="subtitle is-5 has-text-brown" style="opacity: 0.9;">My latest works</h4>
+                      </div>
+                      {% include "_includes/portfolio.html" %}
+                    </div>
+                  </div>
+                  <div class="tile is-parent" id="contact">
+                    <div class="tile is-child">
+                      <div class="section-heading ">
+                        <h3 class="title is-2 has-text-brown">Contact</h3>
+                        <h4 class="subtitle is-5 has-text-brown" style="opacity: 0.9;">If you liked anything on this page, shoot me an email!</h4>
+                      </div>
+                      <br>
+                      {% include "_includes/contact_v2.html" %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </body>
+
+</html>
