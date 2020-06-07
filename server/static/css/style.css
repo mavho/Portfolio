@@ -90,6 +90,7 @@ a :hover{
 }
 .section-heading{
     text-align: center;
+    justify-content: center;
 }
 .media-links{
     display: flex;
@@ -121,3 +122,6 @@ a :hover{
     opacity: .95;
 }
 
+.no-shadow{
+    box-shadow: none;
+}
