@@ -85,6 +85,7 @@ a :hover{
 .main-section{
     background: url("../images/different-hues-of-color-of-the-sky-2847648-min.jpg") fixed;
     /*background:linear-gradient(yellow,green);*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -110,11 +111,16 @@ a :hover{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #3e0b33;
+    background-color: #f1b761;
     color:white;
     visibility: hidden;
-
+    text-align: left;
     transition: opacity .2s, visibility .2s;
+}
+@media only screen and (max-width: 1024px){
+    .image-descr{
+        font-size: small; 
+    }
 }
 
 .desc-wrap:hover .image-descr{
