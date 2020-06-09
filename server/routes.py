@@ -19,7 +19,7 @@ def index():
             %s
             """ % (form.name.data, form.email.data, form.message.data)
             mail.send(msg)
-            return render_template('_layouts/base.html', success=True)
+            return render_template('_layouts/base.html', success=True,form=ContactForm(formdata=None))
 
     elif request.method == 'GET':
         return render_template('_layouts/base.html',form=form), 200

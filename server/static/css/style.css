@@ -21,7 +21,7 @@ body{
 }
 
 /*style links*/
-a :hover{
+a:hover span{
     text-decoration: underline;
     color: #3e0b33;
     text-decoration-color: #3e0b33;
@@ -55,10 +55,10 @@ a :hover{
   width: 400px;
 }
 
-.navbar-item a:hover{
+.link-item a:hover{
     opacity: 0;
 }
-.navbar-item a::after{
+.link-item a::after{
     opacity: 1;
 }
 

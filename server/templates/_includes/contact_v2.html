@@ -5,7 +5,7 @@
       <div class="box opq-bkgrd pink">
       {% if success %}
         <h1 class="has-text-brown"> Thank you!</h1>
-      {% else %}
+      {% endif %}
       <form action="{{ url_for('index') }}" method=post>
         {{ form.hidden_tag() }}
         <div class="field">
@@ -45,7 +45,6 @@
             </div>
         </div>
       </form>
-      {% endif %}
       </div>
     </div>
 </div>
