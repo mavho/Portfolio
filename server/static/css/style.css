@@ -19,7 +19,9 @@ body{
        url('fonts/heebo-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/heebo-v7-latin-regular.svg#Heebo') format('svg'); /* Legacy iOS */
 }
-
+#qp_a{
+    color:#5d4a35;
+}
 /*style links*/
 a:hover span{
     text-decoration: underline;
